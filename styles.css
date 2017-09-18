@@ -1,3 +1,33 @@
-body {
+@media screen and (max-width: 600px) {
 
+}
+
+@media screen and (min-width: 601px) {
+
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+header {
+  width: 100%;
+}
+
+.banner {
+  width: 100%;
+}
+
+.card {
+  width: 600px;
+  height: 800px;
+}
+
+.top {
+  height: 50%;
+  background-image: url("https://blueblots.com/wp-content/uploads/2011/10/4-42angels.jpg");
+}
+
+.bottom {
+    height: 50%;
 }
