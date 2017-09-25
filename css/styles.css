@@ -1,18 +1,45 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
-@import url('https://fonts.googleapis.com/css?family=montserrat-light');
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 490px) {
+  .logo {
+    width: 70%;
+  }
+  #top-text {
+    font-size: 0.7em;
+  }
+}
+
+@media screen and (min-width: 491px) and (max-width: 600px) {
+  .logo {
+    width: 70%;
+  }
+  #top-text {
+    font-size: 0.9em;
+  }
+}
+
+@media screen and (max-width: 1023px) {
  body {
-   width: 100%;
+   width: 90%;
+   margin: auto;
  }
  .card {
    width: 100%;
  }
 }
 
-@media screen and (min-width: 601px) {
+@media screen and (min-width: 730px) {
+  .card {
+    width: 320px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
   body {
-    width: 75%;
+    max-width: 1024px;
+  }
+  .projects {
+    width: 1024px;
   }
 }
 
@@ -26,16 +53,17 @@ body {
   background-color: #F2F2F2;
   justify-content: center;
   display: inline-block;
+  text-align: center;
 }
 
-header {
+.header {
   width: 100%;
   vertical-align: middle;
   display: flex;
   flex-flow: row;
 }
 
-section {
+.projects {
   padding-top: 20px;
   vertical-align: middle;
   display: flex;
@@ -70,20 +98,26 @@ section {
 
 .slogan {
   width: 300px;
-  font-family: 'Montserrat Light';
+  font-family: 'Montserrat';
   color: white;
   text-align: center;
   position: relative;
   top: 45%;
   left: 50%;
-  transform: translateY(-50%);
   transform: translateX(-50%);
 }
 
 .card {
-  width: 320px;
   height: 500px;
   background-color: white;
+}
+
+.card-link {
+  text-decoration: none;
+}
+
+a.card-link:visited {
+  color: #333333;
 }
 
 .top {
@@ -101,8 +135,20 @@ section {
     width: 100%;
 }
 
+#image2 {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+#image3 {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
 #top-text {
-  font-family: 'Montserrat Light';
+  font-family: 'Montserrat';
 }
 
 #slogan-text {
